@@ -133,9 +133,6 @@ button{
     border-radius: 7px;
     font-size: 20px;
 }
-input:hover{
-    background-color: white;
-}
 button:hover{
     background-color: rgba(9,9,121,1);
     color: white;
