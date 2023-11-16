@@ -13,12 +13,14 @@ body{
     width: 500px;
     height: 550px;
     margin: auto;
+    border-radius: 10px;
 }
 form{
     background: rgb(2,0,36);
     background: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(23,23,157,1) 22%, rgba(36,186,217,1) 71%);
     padding: 50px 50px;
     position: absolute;
+    border-radius: 10px;
     inset: 4px;
     z-index: 2;
 }
@@ -112,6 +114,7 @@ input{
     border: none;
     border-bottom: 2px solid white;
     height: 40px;
+    color: white;
     background-color: transparent;
     transition: 4s;
 }
@@ -140,10 +143,4 @@ button:hover{
 a{
     text-decoration: none;
     color: white;
-}
-
-@media screen and (min-width: 810px) {
-    .custom-form{
-        margin: auto;
-    }
 }
