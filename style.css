@@ -108,25 +108,37 @@ h1{
     text-align: center;
     color: white;
 }
-input{
+input {
     width: 100%;
+    height: 50px;
     padding: 5px;
     margin-bottom: 20px;
     border: none;
+    outline: none;
+    font-size: 17px;
     border-bottom: 2px solid white;
-    height: 40px;
     color: white;
     background-color: transparent;
-    transition: 4s;
+    transition: 2s, color 2s; /* Adjusted the transition properties */
+} 
+.input-box {
+    position: relative;
 }
-
-input::placeholder {
-    color: white;
+label {
     font-size: 20px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    transition: top 0.4s, font-size 0.4s; /* Adjusted the transition properties */
+    transform: translateY(-50%);
+    top: 50%;
+    pointer-events: none;
+    left: 0;
 }
-
-.username{
-    margin: 45px 0;
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: 5px;
+    font-size: 16px; /* Adjusted the font size when the label moves up */
 }
 .sign-up{
     float: right;
@@ -150,4 +162,4 @@ a{
        .custom-form{
         width: 400px;
        }
-    }
+}
