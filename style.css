@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&display=swap');
  *{
     box-sizing: border-box;
 }
 body{
     background-color: gray;
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 .custom-form{
     position: relative;
@@ -145,7 +146,7 @@ label {
 }
 button{
     margin: 20px 0;
-    padding: 15px;
+    padding: 8px 20px;
     border: none;
     border-radius: 7px;
     font-size: 20px;
